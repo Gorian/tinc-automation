@@ -51,25 +51,15 @@ TunnelServer		=	no
 EOF
 
 cat >> ${network_config_dir}/hosts/${gateway_host} <<-EOF
-# public host file for teinvpnggateway01
-subnet 	=	10.255.248.1/32
+# public host file for ${gateway_host}
+subnet 	=	/32 # ip for the gateway
 address =	${gateway_host_fqdn}
 cipher	=	blowfish
 digest	=	sha1
 port	=	655
 
 -----BEGIN RSA PUBLIC KEY-----
-MIICCgKCAgEAu26uNPZFbJCrOfAtjerfkmUUcHl26f5xravrFXh1AAq5H05BKasL
-Ovtc8+1DHwFHqtZjGLDdbuzZb6Hp36P22qUJdnTyhPQOgTxzuom9psaaoGzxvLdo
-8xRTtP7NZUUwOfPK/qW5F2h0lUnskkoptTrvfz3eh+SkNq4vBwE8WbO8/o3FLSDD
-pWVXENyFt8jCDLd3V/0mMk2DopVqd+wan/7L6PFXod4CtkGa1p16gpKXyInTLJzb
-yNhR+iNhpyJ2hm+dvEnAQAMFYNSYZkjrKBboeLYgYnw5qPqbozH4s6LE9gD4TT1B
-U+UDQ8Qr4rjblY8qKalMMirZ+FjKrHEUWx0sL9BnjjcwPyd0LCITLL74+77QUvco
-uQEO5hyWKrALFRdmUp0oyUADDIk27sjXtfCZkOLI1rpInuDAnebrGSWFvG85XGQC
-asYcfWeZpWNhrxkCsDdjP9PxqwGgNDYYmlnOV5CWhaQGF3S4DptxYMWFzKFuRBUM
-/3PNgJLE72OT21CelmJuMbxZaC88fKdnb/GkU9hVCN3FExUUk+Ft2MO7210YrsaE
-Ao4k/JhJd/zoM7LhbkaX0yLFXdxjYGC4pnkjb919vO8ycoz6/ixrNmuwE9DINPfs
-4L6rqQJNjW3SvKetyY0tJZAAMFm1Qfonb4cEUsQ4fhSi0BKmHwNJtocCAwEAAQ==
+# insert public key here
 -----END RSA PUBLIC KEY-----
 EOF
 
